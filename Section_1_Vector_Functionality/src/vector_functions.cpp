@@ -1,12 +1,21 @@
 #include "vector_functions.h"
 #include <algorithm>
 #include <iostream>
+#include <vector>
 
 // write your print vector function here
 
-int countMultiplesOfFive(/*take a vector of ints here*/)
+int countMultiplesOfFive(std::vector<int> vec)
 {
-
+    int count = 0;
+    for(int i : vec)
+    {
+        if(i % 5 == 0)
+        {
+            count++;
+        }
+    }
+    return count;
 }
 
 
