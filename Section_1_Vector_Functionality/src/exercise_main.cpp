@@ -42,6 +42,8 @@ int main()
     count = countMultiplesOfFive(more_multiples);
     std::cout << (count == 6 ? "Check 4 passed" : "Failed forth check, should find 6 multiples and found " + std::to_string(count)) << std::endl;
 
-    
+    bool a = check_add_elements();
+    std::cout << (a ? "Add element check passed" : "Failed add element check") << std::endl;
+
     return 0;
 }
